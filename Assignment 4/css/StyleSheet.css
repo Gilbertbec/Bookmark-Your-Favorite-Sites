@@ -1,0 +1,123 @@
+/* Solution of Assignment 4 of class html css javascript in LasalleCollege Montreal 3/28/2018
+Practice using javascript operate DOM to achieve additions and deletions
+Gilbert Zhang xixi2010@gamil.com */
+body
+{
+    font-family: Calibri Light;
+}
+
+#topLine
+{
+    width: 90%;
+}
+
+main
+{
+    margin:auto;
+    width: 80%;
+}
+
+.title
+{
+    color:#878787;
+}
+
+#inputForm
+{
+    margin:auto;
+    background-color:#eeeeee;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.inputTextBox
+{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border:1px;
+    padding: 10px;
+}
+
+#submitButton
+{
+    background-color:#337BB6;
+    width: 100px;
+    height: 50px;
+    color: white;
+    margin: 2em;
+    margin-bottom: 4em;
+    border-radius: 6px;
+    border:1px;
+    font-size: 18px;
+}
+
+#LinksDetail
+{
+    margin:auto;
+    border-radius: 6px;
+}
+
+footer
+{
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: left;
+    color:#878787;
+}
+
+.newItem
+{
+    width: 88%;
+    background-color:#F5F5F5;
+    border-radius: 6px;
+    border-radius: 6px;
+    margin:1em;
+    padding: 3em;
+}
+
+.itemName
+{
+    font-size: 30px;
+    margin: 4px;
+}
+
+.visitButton
+{
+    width: 60px;
+    height: 35px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 4px;
+}
+
+.deleteButton
+{
+    width: 80px;
+    height: 40px;
+    background-color:#E5574D;
+    border-radius: 6px;
+    margin: 4px;
+}
+
+.withText
+{
+    background-color: #F6FAC5;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border:1px;
+    padding: 10px;
+}
+
+.noneText
+{
+    background-color: white;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border:1px;
+    padding: 10px;
+}
