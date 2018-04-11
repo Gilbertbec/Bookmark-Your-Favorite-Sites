@@ -1,9 +1,9 @@
 /// Solution of Assignment 4 of class html css javascript in LasalleCollege Montreal 3/28/2018
 /// Practice using javascript operate DOM to achieve additions and deletions
-/// Gilbert Zhang xixi2010@gamil.com
+/// Gilbert Zhang xixi2010@gmail.com
 var d = document;
 submitButton = d.getElementById("submitButton");
-
+var url = d.getElementById("websiteUrl");
 submitButton.addEventListener("click", function() 
 {
     var name = d.getElementById("websiteName");
@@ -46,8 +46,6 @@ submitButton.addEventListener("click", function()
     })
     //End of Way 1
 
-
-
     //Way 2
     // var newItem = d.createElement("div");
     // newItem.setAttribute("class", "newItem");
@@ -75,8 +73,6 @@ submitButton.addEventListener("click", function()
     //     newItem.parentNode.removeChild(newItem);
     // })
     //End of Way 2
-
-    
 
     //Way 3
     // var newItem = d.createElement("div");
@@ -124,8 +120,6 @@ submitButton.addEventListener("click", function()
     // })
     //End of Way 3
 
-
-
     //Way 4
     // var newItem = d.createElement("div");
     // newItem.setAttribute("class", "newItem");
@@ -138,7 +132,6 @@ submitButton.addEventListener("click", function()
     // var websiteUrlItem = d.createElement("span");
     // websiteUrlItem.setAttribute("width", "100");
     // websiteUrlItem.setAttribute("height", "50");
-
 
     // var linkName = newItemId + "linkName";
     // var btn = d.createElement("button");
@@ -174,14 +167,14 @@ submitButton.addEventListener("click", function()
     url.value = "";
     url.className = "noneText"
 
-    d.querySelector("#" + linkName).addEventListener("click", function(e)
-    {
-        window.open("http://" + websiteUrl);
-    });
+    // d.querySelector("#" + linkName).addEventListener("click", function(e)
+    // {
+    //     window.open("http://" + websiteUrl);
+    // });
 });
 
 //change NameTextBox's background color
-var newName = d.getElementById("websiteName");//Why can not use name here?
+var newName = d.getElementById("websiteName");
 newName.addEventListener("input", function()
 {
     var textLength = newName.value.length;
@@ -196,8 +189,7 @@ newName.addEventListener("input", function()
 });
 
 ////change UrlTextBox's background color
-var newUrl = d.getElementById("websiteUrl");//Why can not use url here?
-newUrl.addEventListener("input", function()
+url.addEventListener("input", function()
 {
     var textLength = newUrl.value.length;
     if(textLength > 0)
